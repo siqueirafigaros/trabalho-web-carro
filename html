@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .heart {
+            font-size: 24px;
+            color: red;
+            cursor: pointer;
+        }
+
+        .card-body {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .car-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .rent-now {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .rent-now:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Koenigsegg</h2>
+            <span class="heart">&#10084;</span>
+        </div>
+        <div class="card-body">
+            <p>Sport</p>
+            <img src="koenigsegg.jpg" alt="Koenigsegg" class="car-image">
+            <div class="details">
+                <div class="detail">
+                    <span class="icon">&#x1F6B9;</span>
+                    <span>90L</span>
+                </div>
+                <div class="detail">
+                    <span class="icon">&#128295;</span>
+                    <span>Manual</span>
+                </div>
+                <div class="detail">
+                    <span class="icon">&#128101;</span>
+                    <span>2 People</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="price">$99.00/day</span>
+            <button class="rent-now">Rent Now</button>
+        </div>
+    </div>
+</body>
+</html>
